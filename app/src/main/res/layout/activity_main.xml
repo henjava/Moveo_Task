@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pink"
+    tools:context="MainActivity">
+
+    <TextView
+        android:id="@+id/noteText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="15dp"
+        android:fontFamily="sans-serif-black"
+        android:padding="10dp"
+        android:text="@string/notes"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="30dp"
+        android:textStyle="bold"></TextView>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycleView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/btnAddNote"
+        android:layout_below="@+id/noteText"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="1dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"></androidx.recyclerview.widget.RecyclerView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+
+        android:id="@+id/btnAddNote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/main_navigation"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="false"
+        android:layout_marginRight="4dp"
+
+        android:layout_marginBottom="10dp"
+        android:clickable="true"
+        android:padding="10dp"
+        android:tint="@color/black"
+        app:backgroundTint="#FF69B4"
+        app:srcCompat="@android:drawable/ic_menu_edit" />
+
+
+    <LinearLayout
+        android:id="@+id/main_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="0dp">
+
+
+        <Button
+            android:id="@+id/btnMapNote"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawableTint="@color/white"
+            android:text="Map"
+            app:backgroundTint="#FF69B4"></Button>
+
+        <Button
+            android:id="@+id/main_log_out_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:backgroundTint="#FF69B4"
+            android:text="Log Out"></Button>
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/main_empty_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/recycleView"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:fontFamily="monospace"
+        android:text="No Notes Yet"
+        android:textSize="22sp"
+        android:visibility="gone" />
+
+</RelativeLayout>

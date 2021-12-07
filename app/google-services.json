@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "938313360710",
+    "project_id": "moveoproject-a341a",
+    "storage_bucket": "moveoproject-a341a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:938313360710:android:a7b929eeb15320f5a47147",
+        "android_client_info": {
+          "package_name": "com.example.moveo_project"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "938313360710-l8e8j4g9bivbi88pvfjrlh3r4hqo3g90.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDmq1_C2H0zq4yJECMbze41CMDhSvZGlDk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "938313360710-l8e8j4g9bivbi88pvfjrlh3r4hqo3g90.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
